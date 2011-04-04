@@ -1,0 +1,175 @@
+\hypertarget{interface_a_p_i_request}{
+\section{APIRequest Class Reference}
+\label{interface_a_p_i_request}\index{APIRequest@{APIRequest}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_a_p_i_request_ae754d003136a832f7711e49ca81176e1}{setupRequest:userData:requestMethod:}
+\item 
+(void) -\/ \hyperlink{interface_a_p_i_request_aacc8c0cefb7b93bd32466980f5f06671}{sendRequest}
+\item 
+\hypertarget{interface_a_p_i_request_a4ceed4b37a3e1e12b67a7d86d05dc017}{
+(NSString $\ast$) -\/ {\bfseries currentLocationStr:}}
+\label{interface_a_p_i_request_a4ceed4b37a3e1e12b67a7d86d05dc017}
+
+\item 
+(NSString $\ast$) -\/ \hyperlink{interface_a_p_i_request_ac0fdffb3608aa1fc065aa7bd33570653}{getURLEncoded:}
+\item 
+(NSString $\ast$) -\/ \hyperlink{interface_a_p_i_request_af1c709eaaaa291dc6d9334fe21fd9ec2}{decodedURLString:}
+\item 
+(void) -\/ \hyperlink{interface_a_p_i_request_aa1cedc6934b310f2bc9f79dbaecb3c88}{deviceInfoUploadPostBodyUsing:requestUrl:}
+\item 
+(NSString $\ast$) -\/ \hyperlink{interface_a_p_i_request_a676aa8b97845329c1a701fa8e3b9b0db}{adRequestPostBodyUsing:}
+\item 
+(void) -\/ \hyperlink{interface_a_p_i_request_aa6e88c01ae4d6925b1501050e9d13afe}{uploadDeviceInfo}
+\item 
+(void) -\/ \hyperlink{interface_a_p_i_request_ab17ea791c42abb329b8d1c95ad210370}{storeCachedUrl:andCachedUrlLife:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_a_p_i_request_a781e9640f528ca38756add92022d13e7}{
+\hyperlink{interface_in_mobi_ad_manager}{InMobiAdManager} $\ast$ {\bfseries delegate}}
+\label{interface_a_p_i_request_a781e9640f528ca38756add92022d13e7}
+
+\item 
+\hypertarget{interface_a_p_i_request_aaa99cd77b3ad5185901fa325671fa2e6}{
+SEL {\bfseries callBack}}
+\label{interface_a_p_i_request_aaa99cd77b3ad5185901fa325671fa2e6}
+
+\item 
+\hypertarget{interface_a_p_i_request_a03b7fcf5047777c01a1e3e9c3ea6a574}{
+SEL {\bfseries errorCallBack}}
+\label{interface_a_p_i_request_a03b7fcf5047777c01a1e3e9c3ea6a574}
+
+\item 
+\hypertarget{interface_a_p_i_request_a4d9ce25a759063ec362e3c2d4c35dc15}{
+NSMutableData $\ast$ {\bfseries receivedData}}
+\label{interface_a_p_i_request_a4d9ce25a759063ec362e3c2d4c35dc15}
+
+\item 
+\hypertarget{interface_a_p_i_request_a444d46f2b4ba4671c41a491b0ad72bc5}{
+NSMutableURLRequest $\ast$ {\bfseries urlRequest}}
+\label{interface_a_p_i_request_a444d46f2b4ba4671c41a491b0ad72bc5}
+
+\item 
+\hypertarget{interface_a_p_i_request_a602eb381978e4dd28c1637a966152bf3}{
+NSURLConnection $\ast$ {\bfseries urlConnection}}
+\label{interface_a_p_i_request_a602eb381978e4dd28c1637a966152bf3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_a_p_i_request_a676aa8b97845329c1a701fa8e3b9b0db}{
+\index{APIRequest@{APIRequest}!adRequestPostBodyUsing:@{adRequestPostBodyUsing:}}
+\index{adRequestPostBodyUsing:@{adRequestPostBodyUsing:}!APIRequest@{APIRequest}}
+\subsubsection[{adRequestPostBodyUsing:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSString $\ast$ APIRequest.)adRequestPostBodyUsing: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf UserInfo} $\ast$)}]{ userInfo}
+\end{DoxyParamCaption}
+}}
+\label{interface_a_p_i_request_a676aa8b97845329c1a701fa8e3b9b0db}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em userInfo}]Instance of \hyperlink{interface_user_info}{UserInfo} to obtain device/user provided values. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+post-\/body string to be used when requesting and ad from InMobi server. 
+\end{DoxyReturn}
+\hypertarget{interface_a_p_i_request_af1c709eaaaa291dc6d9334fe21fd9ec2}{
+\index{APIRequest@{APIRequest}!decodedURLString:@{decodedURLString:}}
+\index{decodedURLString:@{decodedURLString:}!APIRequest@{APIRequest}}
+\subsubsection[{decodedURLString:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSString $\ast$ APIRequest.)decodedURLString: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{ decodedString}
+\end{DoxyParamCaption}
+}}
+\label{interface_a_p_i_request_af1c709eaaaa291dc6d9334fe21fd9ec2}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em decodedString}]The NSString to be encoded \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the decoded value of the requested NSString. 
+\end{DoxyReturn}
+\hypertarget{interface_a_p_i_request_aa1cedc6934b310f2bc9f79dbaecb3c88}{
+\index{APIRequest@{APIRequest}!deviceInfoUploadPostBodyUsing:requestUrl:@{deviceInfoUploadPostBodyUsing:requestUrl:}}
+\index{deviceInfoUploadPostBodyUsing:requestUrl:@{deviceInfoUploadPostBodyUsing:requestUrl:}!APIRequest@{APIRequest}}
+\subsubsection[{deviceInfoUploadPostBodyUsing:requestUrl:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void APIRequest.)deviceInfoUploadPostBodyUsing: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf UserInfo} $\ast$)}]{ userInfo}
+\item[{requestUrl:(NSString $\ast$)}]{ urlString}
+\end{DoxyParamCaption}
+}}
+\label{interface_a_p_i_request_aa1cedc6934b310f2bc9f79dbaecb3c88}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em userInfo}]Instance of \hyperlink{interface_user_info}{UserInfo} to obtain device/user provided values. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+post-\/body string to be used when uploading device information to InMobi server. 
+\end{DoxyReturn}
+\hypertarget{interface_a_p_i_request_ac0fdffb3608aa1fc065aa7bd33570653}{
+\index{APIRequest@{APIRequest}!getURLEncoded:@{getURLEncoded:}}
+\index{getURLEncoded:@{getURLEncoded:}!APIRequest@{APIRequest}}
+\subsubsection[{getURLEncoded:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSString $\ast$ APIRequest.)getURLEncoded: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{ unencodedString}
+\end{DoxyParamCaption}
+}}
+\label{interface_a_p_i_request_ac0fdffb3608aa1fc065aa7bd33570653}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em unencodedString}]The NSString to be encoded \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the encoded value of the requested NSString. 
+\end{DoxyReturn}
+\hypertarget{interface_a_p_i_request_aacc8c0cefb7b93bd32466980f5f06671}{
+\index{APIRequest@{APIRequest}!sendRequest@{sendRequest}}
+\index{sendRequest@{sendRequest}!APIRequest@{APIRequest}}
+\subsubsection[{sendRequest}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void APIRequest.)sendRequest 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_a_p_i_request_aacc8c0cefb7b93bd32466980f5f06671}
+Use this method to make urlconnection with InMobi server. Call this method only after setupRequest method,so that NSURLRequest object has been create.d \hypertarget{interface_a_p_i_request_ae754d003136a832f7711e49ca81176e1}{
+\index{APIRequest@{APIRequest}!setupRequest:userData:requestMethod:@{setupRequest:userData:requestMethod:}}
+\index{setupRequest:userData:requestMethod:@{setupRequest:userData:requestMethod:}!APIRequest@{APIRequest}}
+\subsubsection[{setupRequest:userData:requestMethod:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void APIRequest.)setupRequest: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{ urlString}
+\item[{userData:({\bf UserInfo} $\ast$)}]{ userInfoRef}
+\item[{requestMethod:(NSString $\ast$)}]{ method}
+\end{DoxyParamCaption}
+}}
+\label{interface_a_p_i_request_ae754d003136a832f7711e49ca81176e1}
+This method is used to prepare a NSURLRequest object, which will be used to request an ad from InMobi server, or register a click to InMobi server. 
+\begin{DoxyParams}{Parameters}
+\item[{\em urlString}]The ad-\/server url to which an ad request has to be made. \item[{\em userInfoRef}]Instance of \hyperlink{interface_user_info}{UserInfo} to obtain device/user provided values. \item[{\em requestMethod}]method The method type of NSURLRequest, typically GET/POST. \end{DoxyParams}
+\hypertarget{interface_a_p_i_request_ab17ea791c42abb329b8d1c95ad210370}{
+\index{APIRequest@{APIRequest}!storeCachedUrl:andCachedUrlLife:@{storeCachedUrl:andCachedUrlLife:}}
+\index{storeCachedUrl:andCachedUrlLife:@{storeCachedUrl:andCachedUrlLife:}!APIRequest@{APIRequest}}
+\subsubsection[{storeCachedUrl:andCachedUrlLife:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void APIRequest.)storeCachedUrl: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{ cachedUrl}
+\item[{andCachedUrlLife:(NSString $\ast$)}]{ cachedUrlLife}
+\end{DoxyParamCaption}
+}}
+\label{interface_a_p_i_request_ab17ea791c42abb329b8d1c95ad210370}
+Stores a cached url \& its timespan in NSURLDefaults. 
+\begin{DoxyParams}{Parameters}
+\item[{\em cachedUrl}]The url to be cached \item[{\em cachedUrlLife}]The timespan {\itshape in seconds\/} of the url \end{DoxyParams}
+\hypertarget{interface_a_p_i_request_aa6e88c01ae4d6925b1501050e9d13afe}{
+\index{APIRequest@{APIRequest}!uploadDeviceInfo@{uploadDeviceInfo}}
+\index{uploadDeviceInfo@{uploadDeviceInfo}!APIRequest@{APIRequest}}
+\subsubsection[{uploadDeviceInfo}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void APIRequest.)uploadDeviceInfo 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_a_p_i_request_aa6e88c01ae4d6925b1501050e9d13afe}
+This method is triggers the upload of device information to InMobi server. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/rishabhchowdhary/Documents/workspace/InMobi-\/iOS-\/SVN/SDK/APIRequest.h\end{DoxyCompactItemize}

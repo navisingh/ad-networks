@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'AdWhirl' target in the 'AdWhirl' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

@@ -1,0 +1,1 @@
+export PATH=${PATH}:/Users/njamal/src/android-sdk-mac_x86/tools

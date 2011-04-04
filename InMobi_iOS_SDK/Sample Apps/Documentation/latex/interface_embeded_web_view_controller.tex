@@ -1,0 +1,111 @@
+\hypertarget{interface_embeded_web_view_controller}{
+\section{EmbededWebViewController Class Reference}
+\label{interface_embeded_web_view_controller}\index{EmbededWebViewController@{EmbededWebViewController}}
+}
+
+
+{\ttfamily \#import $<$EmbededWebViewController.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_embeded_web_view_controller_a1a41a25054534bbfe58dbd532a0ad20c}{initWithUrl:withDelegate:webPageTile:}
+\item 
+(void) -\/ \hyperlink{interface_embeded_web_view_controller_a8789af10370392b32681d8ec2fb9da5b}{setUrl:}
+\item 
+(void) -\/ \hyperlink{interface_embeded_web_view_controller_a76dead6bd39f1dac6698b900af51aaf7}{dismissModalViewController}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_embeded_web_view_controller_a9f11869bf3acaf21100d18c6f33a4822}{
+UIActivityIndicatorView $\ast$ {\bfseries activityView}}
+\label{interface_embeded_web_view_controller_a9f11869bf3acaf21100d18c6f33a4822}
+
+\item 
+\hypertarget{interface_embeded_web_view_controller_a16abb2d2c8f975f97faca846ca0ceb0c}{
+UIWebView $\ast$ {\bfseries webView}}
+\label{interface_embeded_web_view_controller_a16abb2d2c8f975f97faca846ca0ceb0c}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_embeded_web_view_controller_ab9f786722e132f94acad0174792e1824}{
+NSString $\ast$ {\bfseries requestUrl}}
+\label{interface_embeded_web_view_controller_ab9f786722e132f94acad0174792e1824}
+
+\item 
+\hypertarget{interface_embeded_web_view_controller_abf4c87e90d6886e8af24beaae6a3a51f}{
+UIBarButtonItem $\ast$ {\bfseries backButton}}
+\label{interface_embeded_web_view_controller_abf4c87e90d6886e8af24beaae6a3a51f}
+
+\item 
+\hypertarget{interface_embeded_web_view_controller_ae09ddbc0f9e307e07c35aa1b49421150}{
+BOOL {\bfseries backTapped}}
+\label{interface_embeded_web_view_controller_ae09ddbc0f9e307e07c35aa1b49421150}
+
+\item 
+\hypertarget{interface_embeded_web_view_controller_a0a870b9d5e08edae990970238e03d45b}{
+id$<$ \hyperlink{protocol_ad_screen_dismiss_delegate-p}{AdScreenDismissDelegate} $>$ {\bfseries callerDelegate}}
+\label{interface_embeded_web_view_controller_a0a870b9d5e08edae990970238e03d45b}
+
+\item 
+\hypertarget{interface_embeded_web_view_controller_a4ee352efd4f0f0b310758b23b3ad764d}{
+NSString $\ast$ {\bfseries titleText}}
+\label{interface_embeded_web_view_controller_a4ee352efd4f0f0b310758b23b3ad764d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{_embeded_web_view_controller_8h_source}{EmbededWebViewController.h} This class is used to display a full-\/screen UIWebView for CTAs which fall under the category of \char`\"{}web\char`\"{}. \begin{DoxyAuthor}{Author}
+InMobi Copyright 2011 InMobi Technologies Pvt. Ltd.. All rights reserved. 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_embeded_web_view_controller_a76dead6bd39f1dac6698b900af51aaf7}{
+\index{EmbededWebViewController@{EmbededWebViewController}!dismissModalViewController@{dismissModalViewController}}
+\index{dismissModalViewController@{dismissModalViewController}!EmbededWebViewController@{EmbededWebViewController}}
+\subsubsection[{dismissModalViewController}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) dismissModalViewController 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_embeded_web_view_controller_a76dead6bd39f1dac6698b900af51aaf7}
+This method is called when the Modal View Controller has to be dismissed. \hypertarget{interface_embeded_web_view_controller_a1a41a25054534bbfe58dbd532a0ad20c}{
+\index{EmbededWebViewController@{EmbededWebViewController}!initWithUrl:withDelegate:webPageTile:@{initWithUrl:withDelegate:webPageTile:}}
+\index{initWithUrl:withDelegate:webPageTile:@{initWithUrl:withDelegate:webPageTile:}!EmbededWebViewController@{EmbededWebViewController}}
+\subsubsection[{initWithUrl:withDelegate:webPageTile:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initWithUrl: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{ url}
+\item[{withDelegate:(id$<${\bf AdScreenDismissDelegate}$>$)}]{ viewDelegate}
+\item[{webPageTile:(NSString $\ast$)}]{ wvTitle}
+\end{DoxyParamCaption}
+}}
+\label{interface_embeded_web_view_controller_a1a41a25054534bbfe58dbd532a0ad20c}
+Use this method to obtain an instance of \hyperlink{interface_embeded_web_view_controller}{EmbededWebViewController}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em url}]The url to be opened by the webView. \item[{\em viewDelegate}]The delegate to notify when this Modal View Controller will be dismissed. \item[{\em wvTitle}]The title for this UIViewController's navigationItem. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an instance of \hyperlink{interface_embeded_web_view_controller}{EmbededWebViewController}. 
+\end{DoxyReturn}
+\hypertarget{interface_embeded_web_view_controller_a8789af10370392b32681d8ec2fb9da5b}{
+\index{EmbededWebViewController@{EmbededWebViewController}!setUrl:@{setUrl:}}
+\index{setUrl:@{setUrl:}!EmbededWebViewController@{EmbededWebViewController}}
+\subsubsection[{setUrl:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setUrl: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{ url}
+\end{DoxyParamCaption}
+}}
+\label{interface_embeded_web_view_controller_a8789af10370392b32681d8ec2fb9da5b}
+Set url for the full screen UIWebView 
+\begin{DoxyParams}{Parameters}
+\item[{\em url}]The url to be opened by the webView. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/rishabhchowdhary/Documents/workspace/InMobi-\/iOS-\/SVN/SDK/EmbededWebViewController.h\item 
+/Users/rishabhchowdhary/Documents/workspace/InMobi-\/iOS-\/SVN/SDK/EmbededWebViewController.m\end{DoxyCompactItemize}

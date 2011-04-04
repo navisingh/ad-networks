@@ -1,0 +1,400 @@
+\hypertarget{interface_in_mobi_ad_manager}{
+\section{InMobiAdManager Class Reference}
+\label{interface_in_mobi_ad_manager}\index{InMobiAdManager@{InMobiAdManager}}
+}
+
+
+{\ttfamily \#import $<$InMobiAdManager.h$>$}
+
+Inheritance diagram for InMobiAdManager:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_in_mobi_ad_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_manager_a473b88b988e0757eb03abd3bebf870da}{loadNewAd}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_manager_a5bc8a898a545a4d150b62d9ee9a98f9a}{adClicked}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_manager_aca6b08a236c2ff698a3b4fbc9b5a3401}{finishAdViewInitializationDelegate:}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_manager_adbafd353b03f00808d15bba171f323ce}{startDeviceInfoUploadOnUrl:}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_manager_ae98133cf3664ff85167c6a824d7f918d}{setRequestParameter:forKey:}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_manager_ad925a8d6aee5dbbc3090987fa6a9510c}{checkAdUnitLoadComplete}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_manager_ab85928de22ce5fa57d6d192266bcc84a}{setDelegate:}
+\item 
+(id$<$ \hyperlink{protocol_in_mobi_ad_delegate-p}{InMobiAdDelegate} $>$) -\/ \hyperlink{interface_in_mobi_ad_manager_a98bd21c7d831e1551979af8444090c0b}{getDelegate}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_manager_acba6d2e99c7a62541c8d4fee81883fed}{updateAdViewForAdUnit}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_manager_a8f2697a753fd481749f8d3bd3832c9f4}{setupAdRequest}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_manager_afb064845376b6ca71f190425045158c8}{showEmbedWebController:}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_manager_a804ec536ceced3adeb992cee138da772}{performAdFailedNotification}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_manager_a4a3a4a7197a6477ddfd00fb555404d91}{performAdSuccessNotification}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_manager_afdf45782b03eefb782dee152454e1f01}{sendAdClickedNotification}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_manager_adbdbbd62bb6b7a18114a81e669a17369}{setAdUnit:}
+\item 
+(BOOL) -\/ \hyperlink{interface_in_mobi_ad_manager_a99f9a580a2aab19b81106c3ed1268126}{areFieldsValid:delegate:}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_manager_aa8aa167b7eb6e5b4e889d34689e03bc4}{setWebViewUserInteraction:}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_manager_ac1cf97341c617bc2fbd4d91b6bb21d0d}{restoreNormalAdState}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_manager_acdcc27bd1eea1c3d1de0969ef98004c9}{adClickedDataFinishedLoadingWithRedirectUrl:adActionType:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_in_mobi_ad_view}{InMobiAdView} $\ast$) + \hyperlink{interface_in_mobi_ad_manager_a076f2f74984f6dcd142cd12673b5b827}{requestAdUnit:withDelegate:}
+\item 
+\hypertarget{interface_in_mobi_ad_manager_ae1482f52b4a89493a0c11b0adafabca2}{
+(\hyperlink{interface_in_mobi_ad_view}{InMobiAdView} $\ast$) + {\bfseries startInmobiAdManagerAttachedDelegate:}}
+\label{interface_in_mobi_ad_manager_ae1482f52b4a89493a0c11b0adafabca2}
+
+\item 
+(NSString $\ast$) + \hyperlink{interface_in_mobi_ad_manager_ad50af257f1c84d8e359c9789ee5bc2fb}{inMobiSDKVersion}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_in_mobi_ad_manager_aac5ce76d06091b51c1dca00d796cd49b}{
+UIViewController $\ast$ {\bfseries pushController}}
+\label{interface_in_mobi_ad_manager_aac5ce76d06091b51c1dca00d796cd49b}
+
+\item 
+\hypertarget{interface_in_mobi_ad_manager_ac515f7fb3c291aa78dec8bb44fd6a8ab}{
+NSString $\ast$ {\bfseries hRefTag}}
+\label{interface_in_mobi_ad_manager_ac515f7fb3c291aa78dec8bb44fd6a8ab}
+
+\item 
+\hypertarget{interface_in_mobi_ad_manager_af9edda996037b90de340633c3059ddef}{
+NSString $\ast$ {\bfseries hRefKey}}
+\label{interface_in_mobi_ad_manager_af9edda996037b90de340633c3059ddef}
+
+\item 
+\hypertarget{interface_in_mobi_ad_manager_a129faf6a8633d897fbeed7c2e86a3c17}{
+NSTimer $\ast$ {\bfseries adUnitFailLoadTimer}}
+\label{interface_in_mobi_ad_manager_a129faf6a8633d897fbeed7c2e86a3c17}
+
+\item 
+\hypertarget{interface_in_mobi_ad_manager_a6ea08c133db3d755c9cbf51f0139e385}{
+NSTimer $\ast$ {\bfseries gpsRefreshTimer}}
+\label{interface_in_mobi_ad_manager_a6ea08c133db3d755c9cbf51f0139e385}
+
+\item 
+\hypertarget{interface_in_mobi_ad_manager_aac272580bd8489339456ec9d88b838d7}{
+UIWebView $\ast$ {\bfseries webView1}}
+\label{interface_in_mobi_ad_manager_aac272580bd8489339456ec9d88b838d7}
+
+\item 
+\hypertarget{interface_in_mobi_ad_manager_aac4deb4463a702585b5b9551c5a5ca1b}{
+UIWebView $\ast$ {\bfseries webView2}}
+\label{interface_in_mobi_ad_manager_aac4deb4463a702585b5b9551c5a5ca1b}
+
+\item 
+\hypertarget{interface_in_mobi_ad_manager_aad5a8c182280b30cbc889ce01709138e}{
+BOOL {\bfseries shouldLoadWebView1}}
+\label{interface_in_mobi_ad_manager_aad5a8c182280b30cbc889ce01709138e}
+
+\item 
+\hypertarget{interface_in_mobi_ad_manager_a136eb6ad4d6e402c271bd8e28af4c306}{
+\hyperlink{interface_a_p_i_request}{APIRequest} $\ast$ {\bfseries adRequest}}
+\label{interface_in_mobi_ad_manager_a136eb6ad4d6e402c271bd8e28af4c306}
+
+\item 
+\hypertarget{interface_in_mobi_ad_manager_ab29f5ecbf7be122c3a340bcee7922cdc}{
+ClickRequest $\ast$ {\bfseries clickReqeust}}
+\label{interface_in_mobi_ad_manager_ab29f5ecbf7be122c3a340bcee7922cdc}
+
+\item 
+\hypertarget{interface_in_mobi_ad_manager_a2711f9375fe18b65f35a7deb547110ce}{
+\hyperlink{interface_embeded_web_view_controller}{EmbededWebViewController} $\ast$ {\bfseries ewvController}}
+\label{interface_in_mobi_ad_manager_a2711f9375fe18b65f35a7deb547110ce}
+
+\item 
+\hypertarget{interface_in_mobi_ad_manager_a21f39b6b64425d012fc88780ad60f558}{
+UIView $\ast$ {\bfseries hideWebView}}
+\label{interface_in_mobi_ad_manager_a21f39b6b64425d012fc88780ad60f558}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_in_mobi_ad_manager_a475b593a0a4985b7b776a53e3eddea12}{
+BOOL {\bfseries isAdRequestDone}}
+\label{interface_in_mobi_ad_manager_a475b593a0a4985b7b776a53e3eddea12}
+
+\item 
+\hypertarget{interface_in_mobi_ad_manager_a4687b204d8d8ee8114e4489c9c322c25}{
+\hyperlink{interface_ad_unit}{AdUnit} $\ast$ {\bfseries currentAd}}
+\label{interface_in_mobi_ad_manager_a4687b204d8d8ee8114e4489c9c322c25}
+
+\item 
+\hypertarget{interface_in_mobi_ad_manager_a935cd0ecafa8a76c5c57c1db809d6b51}{
+id$<$ \hyperlink{protocol_in_mobi_ad_delegate-p}{InMobiAdDelegate} $>$ {\bfseries sdkDelegate}}
+\label{interface_in_mobi_ad_manager_a935cd0ecafa8a76c5c57c1db809d6b51}
+
+\item 
+\hypertarget{interface_in_mobi_ad_manager_a8f0e3bc6ab9ee5b2682ff69ece737c7d}{
+\hyperlink{interface_user_info}{UserInfo} $\ast$ {\bfseries userInfoRef}}
+\label{interface_in_mobi_ad_manager_a8f0e3bc6ab9ee5b2682ff69ece737c7d}
+
+\item 
+\hypertarget{interface_in_mobi_ad_manager_a4d1dfe8ff8d63e73c69d62085b1865bd}{
+BOOL {\bfseries touchedDownOnAd}}
+\label{interface_in_mobi_ad_manager_a4d1dfe8ff8d63e73c69d62085b1865bd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+AdManager.h \begin{DoxyAuthor}{Author}
+InMobi Copyright 2011 InMobi Technologies Pvt. Ltd.. All rights reserved. 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_in_mobi_ad_manager_a5bc8a898a545a4d150b62d9ee9a98f9a}{
+\index{InMobiAdManager@{InMobiAdManager}!adClicked@{adClicked}}
+\index{adClicked@{adClicked}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{adClicked}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) adClicked 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_a5bc8a898a545a4d150b62d9ee9a98f9a}
+Called from touchesEnded, when this \hyperlink{interface_in_mobi_ad_view}{InMobiAdView} is touched by the user. \hypertarget{interface_in_mobi_ad_manager_acdcc27bd1eea1c3d1de0969ef98004c9}{
+\index{InMobiAdManager@{InMobiAdManager}!adClickedDataFinishedLoadingWithRedirectUrl:adActionType:@{adClickedDataFinishedLoadingWithRedirectUrl:adActionType:}}
+\index{adClickedDataFinishedLoadingWithRedirectUrl:adActionType:@{adClickedDataFinishedLoadingWithRedirectUrl:adActionType:}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{adClickedDataFinishedLoadingWithRedirectUrl:adActionType:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) adClickedDataFinishedLoadingWithRedirectUrl: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{ redirectUrl}
+\item[{adActionType:(NSString $\ast$)}]{ actionType}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_acdcc27bd1eea1c3d1de0969ef98004c9}
+Called from ClickRequest, when a redirect url is found after this view was clicked. 
+\begin{DoxyParams}{Parameters}
+\item[{\em redirectUrl}]The redirect url which should be handled by this \hyperlink{interface_in_mobi_ad_view}{InMobiAdView}, as per the CTA. \item[{\em actionType}]The new Ad-\/Action-\/Type, if found in the click response. \end{DoxyParams}
+\hypertarget{interface_in_mobi_ad_manager_a99f9a580a2aab19b81106c3ed1268126}{
+\index{InMobiAdManager@{InMobiAdManager}!areFieldsValid:delegate:@{areFieldsValid:delegate:}}
+\index{areFieldsValid:delegate:@{areFieldsValid:delegate:}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{areFieldsValid:delegate:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) areFieldsValid: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{ adUnitSlot}
+\item[{delegate:(id$<${\bf InMobiAdDelegate}$>$)}]{ delegate}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_a99f9a580a2aab19b81106c3ed1268126}
+This method is called when developer requests for a new instance of \hyperlink{interface_in_mobi_ad_view}{InMobiAdView}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em adUnitSlot}]The adunit slot for this \hyperlink{interface_in_mobi_ad_view}{InMobiAdView}. Must be a valid adunit, see \hyperlink{_in_mobi_ad_view_8h_source}{InMobiAdView.h} for supported iOS banner sizes. \item[{\em delegate}]The \hyperlink{protocol_in_mobi_ad_delegate-p}{InMobiAdDelegate} to which this view will be attached. The delegate must implement the required methods for this protocol. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+YES, if all fields are valid and \hyperlink{interface_in_mobi_ad_view}{InMobiAdView} can be instantiated NO, if fields are not valid. 
+\end{DoxyReturn}
+\hypertarget{interface_in_mobi_ad_manager_ad925a8d6aee5dbbc3090987fa6a9510c}{
+\index{InMobiAdManager@{InMobiAdManager}!checkAdUnitLoadComplete@{checkAdUnitLoadComplete}}
+\index{checkAdUnitLoadComplete@{checkAdUnitLoadComplete}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{checkAdUnitLoadComplete}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) checkAdUnitLoadComplete 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_ad925a8d6aee5dbbc3090987fa6a9510c}
+called by adUnitFailLoadTimer to check whether ad unit successfully loaded or not. \hypertarget{interface_in_mobi_ad_manager_aca6b08a236c2ff698a3b4fbc9b5a3401}{
+\index{InMobiAdManager@{InMobiAdManager}!finishAdViewInitializationDelegate:@{finishAdViewInitializationDelegate:}}
+\index{finishAdViewInitializationDelegate:@{finishAdViewInitializationDelegate:}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{finishAdViewInitializationDelegate:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) finishAdViewInitializationDelegate: 
+\begin{DoxyParamCaption}
+\item[{dummy(id$<${\bf InMobiAdDelegate}$>$)}]{ delegate}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_aca6b08a236c2ff698a3b4fbc9b5a3401}
+Called when delegate validation is completed \& this view is ready to serve ads. 
+\begin{DoxyParams}{Parameters}
+\item[{\em delegate}]The \hyperlink{protocol_in_mobi_ad_delegate-p}{InMobiAdDelegate} to which \hyperlink{interface_in_mobi_ad_view}{InMobiAdView} is attached. \end{DoxyParams}
+\hypertarget{interface_in_mobi_ad_manager_a98bd21c7d831e1551979af8444090c0b}{
+\index{InMobiAdManager@{InMobiAdManager}!getDelegate@{getDelegate}}
+\index{getDelegate@{getDelegate}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{getDelegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<$ {\bf InMobiAdDelegate} $>$) getDelegate 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_a98bd21c7d831e1551979af8444090c0b}
+Returns the \hyperlink{protocol_in_mobi_ad_delegate-p}{InMobiAdDelegate} for this view. \hypertarget{interface_in_mobi_ad_manager_ad50af257f1c84d8e359c9789ee5bc2fb}{
+\index{InMobiAdManager@{InMobiAdManager}!inMobiSDKVersion@{inMobiSDKVersion}}
+\index{inMobiSDKVersion@{inMobiSDKVersion}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{inMobiSDKVersion}]{\setlength{\rightskip}{0pt plus 5cm}+ (NSString $\ast$) inMobiSDKVersion 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_ad50af257f1c84d8e359c9789ee5bc2fb}
+Returns the version of the current inMobi SDK. \hypertarget{interface_in_mobi_ad_manager_a473b88b988e0757eb03abd3bebf870da}{
+\index{InMobiAdManager@{InMobiAdManager}!loadNewAd@{loadNewAd}}
+\index{loadNewAd@{loadNewAd}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{loadNewAd}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) loadNewAd 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_a473b88b988e0757eb03abd3bebf870da}
+Reload an existing \hyperlink{interface_in_mobi_ad_view}{InMobiAdView} with a new ad. If an ad not loaded successfully, this call fails silently and the old ad remains onscreen.
+
+To preserve the user experience, we recommend loading new ads no more frequently than once per minute. \hypertarget{interface_in_mobi_ad_manager_a804ec536ceced3adeb992cee138da772}{
+\index{InMobiAdManager@{InMobiAdManager}!performAdFailedNotification@{performAdFailedNotification}}
+\index{performAdFailedNotification@{performAdFailedNotification}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{performAdFailedNotification}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) performAdFailedNotification 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_a804ec536ceced3adeb992cee138da772}
+Called when \hyperlink{interface_in_mobi_ad_view}{InMobiAdView} wants to notify its {\itshape delegate\/} that ad request has failed. \hypertarget{interface_in_mobi_ad_manager_a4a3a4a7197a6477ddfd00fb555404d91}{
+\index{InMobiAdManager@{InMobiAdManager}!performAdSuccessNotification@{performAdSuccessNotification}}
+\index{performAdSuccessNotification@{performAdSuccessNotification}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{performAdSuccessNotification}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) performAdSuccessNotification 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_a4a3a4a7197a6477ddfd00fb555404d91}
+Called when \hyperlink{interface_in_mobi_ad_view}{InMobiAdView} wants to notify its {\itshape delegate\/} that ad request was successful. \hypertarget{interface_in_mobi_ad_manager_a076f2f74984f6dcd142cd12673b5b827}{
+\index{InMobiAdManager@{InMobiAdManager}!requestAdUnit:withDelegate:@{requestAdUnit:withDelegate:}}
+\index{requestAdUnit:withDelegate:@{requestAdUnit:withDelegate:}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{requestAdUnit:withDelegate:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf InMobiAdView} $\ast$) requestAdUnit: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{ adUnit}
+\item[{withDelegate:(id$<${\bf InMobiAdDelegate}$>$)}]{ delegate}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_a076f2f74984f6dcd142cd12673b5b827}
+Initiates an ad request and returns a UIView that will contain the results; the delegate is alerted when the ad is ready to display (or has failed to load). If you already have a \hyperlink{interface_in_mobi_ad_view}{InMobiAdView} with an ad loaded, and simply want to show a new ad in the same location, you may use -\/loadNewAd instead (see below).
+
+This method should only be called from UI MainThread. \hypertarget{interface_in_mobi_ad_manager_ac1cf97341c617bc2fbd4d91b6bb21d0d}{
+\index{InMobiAdManager@{InMobiAdManager}!restoreNormalAdState@{restoreNormalAdState}}
+\index{restoreNormalAdState@{restoreNormalAdState}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{restoreNormalAdState}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) restoreNormalAdState 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_ac1cf97341c617bc2fbd4d91b6bb21d0d}
+This method is called after CTA handling is completed. Call this method so that click may happen the next time this view is touched. \hypertarget{interface_in_mobi_ad_manager_afdf45782b03eefb782dee152454e1f01}{
+\index{InMobiAdManager@{InMobiAdManager}!sendAdClickedNotification@{sendAdClickedNotification}}
+\index{sendAdClickedNotification@{sendAdClickedNotification}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{sendAdClickedNotification}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) sendAdClickedNotification 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_afdf45782b03eefb782dee152454e1f01}
+Called when \hyperlink{interface_in_mobi_ad_view}{InMobiAdView} wants to notify its {\itshape delegate\/} that ad has been clicked. \hypertarget{interface_in_mobi_ad_manager_adbdbbd62bb6b7a18114a81e669a17369}{
+\index{InMobiAdManager@{InMobiAdManager}!setAdUnit:@{setAdUnit:}}
+\index{setAdUnit:@{setAdUnit:}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{setAdUnit:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setAdUnit: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{ adUnit}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_adbdbbd62bb6b7a18114a81e669a17369}
+Sets the \hyperlink{interface_ad_unit}{AdUnit} for this view. 
+\begin{DoxyParams}{Parameters}
+\item[{\em adUnit}]The new \hyperlink{interface_ad_unit}{AdUnit} for this view. \end{DoxyParams}
+\hypertarget{interface_in_mobi_ad_manager_ab85928de22ce5fa57d6d192266bcc84a}{
+\index{InMobiAdManager@{InMobiAdManager}!setDelegate:@{setDelegate:}}
+\index{setDelegate:@{setDelegate:}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{setDelegate:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setDelegate: 
+\begin{DoxyParamCaption}
+\item[{dummy(id$<${\bf InMobiAdDelegate}$>$)}]{ delegate}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_ab85928de22ce5fa57d6d192266bcc84a}
+Sets the \hyperlink{protocol_in_mobi_ad_delegate-p}{InMobiAdDelegate} for this view. Set the delegate to {\itshape nil\/} in dealloc method. 
+\begin{DoxyParams}{Parameters}
+\item[{\em delegate}]The new delegate to be set. \end{DoxyParams}
+\hypertarget{interface_in_mobi_ad_manager_ae98133cf3664ff85167c6a824d7f918d}{
+\index{InMobiAdManager@{InMobiAdManager}!setRequestParameter:forKey:@{setRequestParameter:forKey:}}
+\index{setRequestParameter:forKey:@{setRequestParameter:forKey:}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{setRequestParameter:forKey:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setRequestParameter: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{ param}
+\item[{forKey:(NSString $\ast$)}]{ key}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_ae98133cf3664ff85167c6a824d7f918d}
+Use this method to ref-\/tag an \hyperlink{interface_in_mobi_ad_view}{InMobiAdView}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em param}]the value of tag, eg. \char`\"{}top-\/nav-\/bar-\/on-\/chat-\/app\char`\"{} \item[{\em key}]the key for the ref-\/tag. \end{DoxyParams}
+\hypertarget{interface_in_mobi_ad_manager_a8f2697a753fd481749f8d3bd3832c9f4}{
+\index{InMobiAdManager@{InMobiAdManager}!setupAdRequest@{setupAdRequest}}
+\index{setupAdRequest@{setupAdRequest}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{setupAdRequest}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setupAdRequest 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_a8f2697a753fd481749f8d3bd3832c9f4}
+Called just before \hyperlink{interface_in_mobi_ad_view}{InMobiAdView} will set up a connection to fetch for a new ad request. \hypertarget{interface_in_mobi_ad_manager_aa8aa167b7eb6e5b4e889d34689e03bc4}{
+\index{InMobiAdManager@{InMobiAdManager}!setWebViewUserInteraction:@{setWebViewUserInteraction:}}
+\index{setWebViewUserInteraction:@{setWebViewUserInteraction:}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{setWebViewUserInteraction:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setWebViewUserInteraction: 
+\begin{DoxyParamCaption}
+\item[{dummy(BOOL)}]{ userInteraction}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_aa8aa167b7eb6e5b4e889d34689e03bc4}
+Set userInteractionEnabled property for the webview of this \hyperlink{interface_in_mobi_ad_view}{InMobiAdView}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em userInteraction}]YES, if webview should handle touches NO, if UITouch delegate methods should be called. \end{DoxyParams}
+\hypertarget{interface_in_mobi_ad_manager_afb064845376b6ca71f190425045158c8}{
+\index{InMobiAdManager@{InMobiAdManager}!showEmbedWebController:@{showEmbedWebController:}}
+\index{showEmbedWebController:@{showEmbedWebController:}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{showEmbedWebController:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showEmbedWebController: 
+\begin{DoxyParamCaption}
+\item[{dummy(UIViewController $\ast$)}]{ viewNavController}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_afb064845376b6ca71f190425045158c8}
+Displays a MVC which has a UIWebView loaded. 
+\begin{DoxyParams}{Parameters}
+\item[{\em viewNavController}]The MVC to be displayed. \end{DoxyParams}
+\hypertarget{interface_in_mobi_ad_manager_adbafd353b03f00808d15bba171f323ce}{
+\index{InMobiAdManager@{InMobiAdManager}!startDeviceInfoUploadOnUrl:@{startDeviceInfoUploadOnUrl:}}
+\index{startDeviceInfoUploadOnUrl:@{startDeviceInfoUploadOnUrl:}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{startDeviceInfoUploadOnUrl:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) startDeviceInfoUploadOnUrl: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{ url}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_adbafd353b03f00808d15bba171f323ce}
+Will invoke a POST Http Connection to upload device info as per the url 
+\begin{DoxyParams}{Parameters}
+\item[{\em url,:}]the url on which connection has to be made. \end{DoxyParams}
+\hypertarget{interface_in_mobi_ad_manager_acba6d2e99c7a62541c8d4fee81883fed}{
+\index{InMobiAdManager@{InMobiAdManager}!updateAdViewForAdUnit@{updateAdViewForAdUnit}}
+\index{updateAdViewForAdUnit@{updateAdViewForAdUnit}!InMobiAdManager@{InMobiAdManager}}
+\subsubsection[{updateAdViewForAdUnit}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) updateAdViewForAdUnit 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_manager_acba6d2e99c7a62541c8d4fee81883fed}
+This method is called when \hyperlink{interface_in_mobi_ad_view}{InMobiAdView} successfully loads an ad. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/rishabhchowdhary/Documents/workspace/InMobi-\/iOS-\/SVN/SDK/InMobiAdManager.h\item 
+/Users/rishabhchowdhary/Documents/workspace/InMobi-\/iOS-\/SVN/SDK/InMobiAdManager.m\end{DoxyCompactItemize}

@@ -1,0 +1,99 @@
+\hypertarget{interface_in_mobi_ad_view}{
+\section{InMobiAdView Class Reference}
+\label{interface_in_mobi_ad_view}\index{InMobiAdView@{InMobiAdView}}
+}
+Inheritance diagram for InMobiAdView:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_in_mobi_ad_view}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_view_aaec4618fb3a9950651b21d73dc766a30}{loadNewAd}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_view_a946a3666679d8b3c3f422f1e687cef87}{setDelegate:}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_view_a524ed941db8981a46fe1666bac583231}{setAdUnit:}
+\item 
+(void) -\/ \hyperlink{interface_in_mobi_ad_view_aa1c9c038348d48b0a26d380016dcdd86}{setRequestParameter:forKey:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_in_mobi_ad_view_a5386b4f7ff4f2e07a08018d3eacffcd6}{
+(\hyperlink{interface_in_mobi_ad_view}{InMobiAdView} $\ast$) + {\bfseries requestAdUnit:withDelegate:}}
+\label{interface_in_mobi_ad_view_a5386b4f7ff4f2e07a08018d3eacffcd6}
+
+\item 
+(NSString $\ast$) + \hyperlink{interface_in_mobi_ad_view_a9aad18b450e42597ef3112c3b112f01f}{inMobiSDKVersion}
+\item 
+(\hyperlink{interface_in_mobi_ad_view}{InMobiAdView} $\ast$) + \hyperlink{interface_in_mobi_ad_view_a7d02b36bb9b3b12dba0101973caac076}{startInmobiAdEngineAttachedDelegate:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_in_mobi_ad_view_a9aad18b450e42597ef3112c3b112f01f}{
+\index{InMobiAdView@{InMobiAdView}!inMobiSDKVersion@{inMobiSDKVersion}}
+\index{inMobiSDKVersion@{inMobiSDKVersion}!InMobiAdView@{InMobiAdView}}
+\subsubsection[{inMobiSDKVersion}]{\setlength{\rightskip}{0pt plus 5cm}+ (NSString $\ast$) inMobiSDKVersion 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_view_a9aad18b450e42597ef3112c3b112f01f}
+Returns the version of the current inMobi SDK. \hypertarget{interface_in_mobi_ad_view_aaec4618fb3a9950651b21d73dc766a30}{
+\index{InMobiAdView@{InMobiAdView}!loadNewAd@{loadNewAd}}
+\index{loadNewAd@{loadNewAd}!InMobiAdView@{InMobiAdView}}
+\subsubsection[{loadNewAd}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) loadNewAd 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_view_aaec4618fb3a9950651b21d73dc766a30}
+Reload an existing \hyperlink{interface_in_mobi_ad_view}{InMobiAdView} with a new ad. If an ad not loaded successfully, this call fails silently and the old ad remains onscreen. This method should only be called from a run loop in default run loop mode. To preserve the user experience, we recommend loading new ads no more frequently than once per minute. \hypertarget{interface_in_mobi_ad_view_a524ed941db8981a46fe1666bac583231}{
+\index{InMobiAdView@{InMobiAdView}!setAdUnit:@{setAdUnit:}}
+\index{setAdUnit:@{setAdUnit:}!InMobiAdView@{InMobiAdView}}
+\subsubsection[{setAdUnit:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setAdUnit: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{ adUnit}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_view_a524ed941db8981a46fe1666bac583231}
+Set adUnit for \hyperlink{interface_in_mobi_ad_view}{InMobiAdView}. See supported banner sizes as mentioned above. \hypertarget{interface_in_mobi_ad_view_a946a3666679d8b3c3f422f1e687cef87}{
+\index{InMobiAdView@{InMobiAdView}!setDelegate:@{setDelegate:}}
+\index{setDelegate:@{setDelegate:}!InMobiAdView@{InMobiAdView}}
+\subsubsection[{setDelegate:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setDelegate: 
+\begin{DoxyParamCaption}
+\item[{dummy(id$<${\bf InMobiAdDelegate}$>$)}]{ delegate}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_view_a946a3666679d8b3c3f422f1e687cef87}
+Setter for InMobiAdView's delegate. Set the delegate to nil, if you do not want to receive notifications from \hypertarget{interface_in_mobi_ad_view_aa1c9c038348d48b0a26d380016dcdd86}{
+\index{InMobiAdView@{InMobiAdView}!setRequestParameter:forKey:@{setRequestParameter:forKey:}}
+\index{setRequestParameter:forKey:@{setRequestParameter:forKey:}!InMobiAdView@{InMobiAdView}}
+\subsubsection[{setRequestParameter:forKey:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setRequestParameter: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{ param}
+\item[{forKey:(NSString $\ast$)}]{ key}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_view_aa1c9c038348d48b0a26d380016dcdd86}
+Optional: Use this method to assign a custom reference tag at the time of making an Ad Request to the InMobi Ad Server. \hypertarget{interface_in_mobi_ad_view_a7d02b36bb9b3b12dba0101973caac076}{
+\index{InMobiAdView@{InMobiAdView}!startInmobiAdEngineAttachedDelegate:@{startInmobiAdEngineAttachedDelegate:}}
+\index{startInmobiAdEngineAttachedDelegate:@{startInmobiAdEngineAttachedDelegate:}!InMobiAdView@{InMobiAdView}}
+\subsubsection[{startInmobiAdEngineAttachedDelegate:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf InMobiAdView} $\ast$) startInmobiAdEngineAttachedDelegate: 
+\begin{DoxyParamCaption}
+\item[{dummy(id$<${\bf InMobiAdDelegate}$>$)}]{ delegate}
+\end{DoxyParamCaption}
+}}
+\label{interface_in_mobi_ad_view_a7d02b36bb9b3b12dba0101973caac076}
+Equivalent to \mbox{[}\hyperlink{interface_in_mobi_ad_view}{InMobiAdView} requestAdOfSize:INMOBI\_\-AD\_\-UNIT\_\-320x48 withDelegate:delegate\mbox{]}; \begin{Desc}
+\item[\hyperlink{deprecated__deprecated000001}{Deprecated}]This method is deprecated in version 1.3.0 \& above. Use requestAdUnit:withDelegate: instead. \end{Desc}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/rishabhchowdhary/Documents/workspace/InMobi-\/iOS-\/SVN/SDK/InMobiAdView.h\item 
+/Users/rishabhchowdhary/Documents/workspace/InMobi-\/iOS-\/SVN/SDK/InMobiAdView.m\end{DoxyCompactItemize}

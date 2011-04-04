@@ -1,0 +1,61 @@
+\hypertarget{interface_x_m_l_parser}{
+\section{XMLParser Class Reference}
+\label{interface_x_m_l_parser}\index{XMLParser@{XMLParser}}
+}
+
+
+{\ttfamily \#import $<$XMLParser.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_ad_unit}{AdUnit} $\ast$) -\/ \hyperlink{interface_x_m_l_parser_a9fad30c27d268db68fb9767165a31994}{buildAdUnitFromResponseData:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_x_m_l_parser_a462a71d35fc53fb0a4af50d0c417487b}{
+\hyperlink{interface_ad_unit}{AdUnit} $\ast$ {\bfseries ad}}
+\label{interface_x_m_l_parser_a462a71d35fc53fb0a4af50d0c417487b}
+
+\item 
+\hypertarget{interface_x_m_l_parser_a12b83b2e87e21ba0524770935f5a0efa}{
+BOOL {\bfseries isTitleText}}
+\label{interface_x_m_l_parser_a12b83b2e87e21ba0524770935f5a0efa}
+
+\item 
+\hypertarget{interface_x_m_l_parser_a2a513a2a522d723a9ad788707d731263}{
+BOOL {\bfseries isAdUrl}}
+\label{interface_x_m_l_parser_a2a513a2a522d723a9ad788707d731263}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{_x_m_l_parser_8h_source}{XMLParser.h} This class is used to parse the XML Response and generate a vaild \hyperlink{interface_ad_unit}{AdUnit} for the ad. \begin{DoxyAuthor}{Author}
+InMobi Copyright 2011 InMobi Technologies Pvt. Ltd.. All rights reserved. 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_x_m_l_parser_a9fad30c27d268db68fb9767165a31994}{
+\index{XMLParser@{XMLParser}!buildAdUnitFromResponseData:@{buildAdUnitFromResponseData:}}
+\index{buildAdUnitFromResponseData:@{buildAdUnitFromResponseData:}!XMLParser@{XMLParser}}
+\subsubsection[{buildAdUnitFromResponseData:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf AdUnit} $\ast$) buildAdUnitFromResponseData: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSData$\ast$)}]{ data}
+\end{DoxyParamCaption}
+}}
+\label{interface_x_m_l_parser_a9fad30c27d268db68fb9767165a31994}
+This function builds up an \hyperlink{interface_ad_unit}{AdUnit} containing relevant information about ad to be displayed. the adunit has information about the dimensions,CTA,Click Url and CDATABlock, which is the html-\/string of the ad. 
+\begin{DoxyParams}{Parameters}
+\item[{\em data}]The response data fetched from an ad-\/request made to InMobi server. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an autoreleased object of \hyperlink{interface_ad_unit}{AdUnit}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/rishabhchowdhary/Documents/workspace/InMobi-\/iOS-\/SVN/SDK/XMLParser.h\item 
+/Users/rishabhchowdhary/Documents/workspace/InMobi-\/iOS-\/SVN/SDK/XMLParser.m\end{DoxyCompactItemize}

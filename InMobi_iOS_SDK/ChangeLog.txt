@@ -1,0 +1,43 @@
+Changes made in SDK version 2.0:
+
+I) Combined Simulator/Device builds
+
+The previous versions of InMobi libraries: libInMobi_iPhone_Simulator_4.x & libInMobi_iPhone_Device_4.x
+have been combined into a single fat binary, libInMobi_iOS.a.
+The libInMobi_iOS.a is build over architectures- Device(armv6,armv7) and Simulator(i386).
+This library builds against both Simulator & Device configurations.
+
+II) Introduced new banner size support(as per IAB standards). 
+For details, please see InMobiAdView.h
+
+III) Added new methods in InMobiAdDelegate.h
+
+- (UIViewController *)rootViewControllerForAd;
+
+- (void)applicationWillTerminateFromAd:(InMobiAdView *)adView;
+
+III) Added new methods in InMobiAdView.h
+
++ (InMobiAdView *)requestAdUnit:(NSString *)adUnit  withDelegate:(id<InMobiAdDelegate>)delegate;
+
+- (void)setRequestParameter:(NSString *)param forKey:(NSString *)key;
+
+- (void)setRequestParams:(NSDictionary *)paramDictionary;
+
+- (void)setDelegate:(id<InMobiAdDelegate>) delegate;
+
+- (void)setAdUnit:(int)adUnit;
+
+IV) Introduced support for Interface Builder.
+
+V) Deprecated methods in InMobiAdView.h
+
++ (InMobiAdView *)startInmobiAdEngineAttachedDelegate:(id<InMobiAdDelegate>)delegate;
+
+Note: Support to this method will be removed in future releases.
+Use requestAdUnit:withDelegate: instead.
+V) Created new header file InMobiEnumTypes.h
+
+The enum types-Education,Ethnicity,Gender have been moved from InMobiAdView .h to InMobiEnumTypes.h
+
+
