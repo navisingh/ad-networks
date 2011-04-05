@@ -118,8 +118,13 @@
     request.keywords = [NSMutableArray arrayWithArray:(NSArray *)value];
   }
 
+//Navi - added support for iPad.
+  CGRect adFrame = kAdWhirlViewDefaultFrame;
+  if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+        adFrame = CGRectMake(0, 0, 728, 90);
+    
   GADBannerView *view =
-      [[GADBannerView alloc] initWithFrame:kAdWhirlViewDefaultFrame];
+      [[GADBannerView alloc] initWithFrame:adFrame];
 
   view.adUnitID = [self publisherId];
   view.delegate = self;

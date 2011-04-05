@@ -33,7 +33,7 @@
    withAdwhirlDelegate:(id<AdWhirlDelegate>)delegate	
 		forAdWhirlView:(AdWhirlView *)view
 {
-	if (self = [super init])
+	if ((self = [super init]))
 	{
 		self.adUnitID = adUnitID_;
 		self.adWhirlView = view;
@@ -55,8 +55,14 @@
 }
 
 - (void)getAd{
+    
+    //Navi - added support for iPad.
+	CGSize adSize = MOPUB_BANNER_SIZE;
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+		adSize = MOPUB_LEADERBOARD_SIZE;
+    
 	self.mpAdView = [[MPAdView alloc] initWithAdUnitId:self.adUnitID 
-											 size:MOPUB_BANNER_SIZE];
+											 size:adSize];
 	self.mpAdView.delegate = self;
 	
 	if ([adWhirlDelegate respondsToSelector:@selector(locationInfo)]){

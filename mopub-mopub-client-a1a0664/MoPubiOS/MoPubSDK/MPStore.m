@@ -36,7 +36,7 @@
 
 - (id)init
 {
-	if (self = [super init])
+	if ((self = [super init]))
 	{
 		_isProcessing = NO;
 		

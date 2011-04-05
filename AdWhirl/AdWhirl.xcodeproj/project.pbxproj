@@ -120,6 +120,7 @@
 		185D42FB134A835B00F3C02C /* MPStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 185D42E6134A835B00F3C02C /* MPStore.m */; };
 		185D42FC134A835B00F3C02C /* MPTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 185D42E7134A835B00F3C02C /* MPTimer.h */; };
 		185D42FD134A835B00F3C02C /* MPTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 185D42E8134A835B00F3C02C /* MPTimer.m */; };
+		5D195BEB134B7DA60073980A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D195BEA134B7DA60073980A /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -241,6 +242,7 @@
 		185D42E6134A835B00F3C02C /* MPStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPStore.m; path = "../mopub-mopub-client-a1a0664/MoPubiOS/MoPubSDK/MPStore.m"; sourceTree = "<group>"; };
 		185D42E7134A835B00F3C02C /* MPTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPTimer.h; path = "../mopub-mopub-client-a1a0664/MoPubiOS/MoPubSDK/MPTimer.h"; sourceTree = "<group>"; };
 		185D42E8134A835B00F3C02C /* MPTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPTimer.m; path = "../mopub-mopub-client-a1a0664/MoPubiOS/MoPubSDK/MPTimer.m"; sourceTree = "<group>"; };
+		5D195BEA134B7DA60073980A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +250,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D195BEB134B7DA60073980A /* StoreKit.framework in Frameworks */,
 				185D42CC134A64F900F3C02C /* QuartzCore.framework in Frameworks */,
 				185D42CA134A64F200F3C02C /* iAd.framework in Frameworks */,
 				185D42C8134A64E300F3C02C /* MapKit.framework in Frameworks */,
@@ -290,6 +293,7 @@
 		185D41EE134A339700F3C02C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D195BEA134B7DA60073980A /* StoreKit.framework */,
 				185D42CB134A64F900F3C02C /* QuartzCore.framework */,
 				185D42C9134A64F100F3C02C /* iAd.framework */,
 				185D42C7134A64E300F3C02C /* MapKit.framework */,
@@ -740,6 +744,7 @@
 				185D41F8134A339700F3C02C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

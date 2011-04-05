@@ -44,7 +44,7 @@ static NSArray *BROWSER_SCHEMES, *SPECIAL_HOSTS;
 
 - (id)initWithURL:(NSURL *)URL delegate:(id<MPAdBrowserControllerDelegate>)delegate
 {
-	if (self = [super initWithNibName:@"MPAdBrowserController" bundle:nil])
+	if ((self = [super initWithNibName:@"MPAdBrowserController" bundle:nil]))
 	{
 		_delegate = delegate;
 		_URL = [URL copy];
