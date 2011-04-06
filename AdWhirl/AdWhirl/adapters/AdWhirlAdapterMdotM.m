@@ -122,11 +122,19 @@
   } else
     test = 0;
        
-  NSString *str = [NSString stringWithFormat:
-            @"http://ads.mdotm.com/ads/feed.php?appver=%d&v=%@&apikey=mdotm&appkey=%@&deviceid=%@&width=320&height=50&fmt=json&ua=%@&test=%d",
-          kAdWhirlAppVer, [[UIDevice currentDevice] systemVersion],
-          appKey, [[UIDevice currentDevice] uniqueIdentifier], userAgent, test];
-               
+    int w = kAdWhirlViewWidth;
+    int h = kAdWhirlViewHeight;
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        w = 728;
+        h = 90;
+    }
+    
+	NSString *str = [NSString stringWithFormat:
+                     @"http://ads.mdotm.com/ads/feed.php?appver=%d&v=%@&apikey=mdotm&appkey=%@&deviceid=%@&width=%d&height=%d&fmt=json&ua=%@&test=%d",
+           kAdWhirlAppVer, [[UIDevice currentDevice] systemVersion],
+           appKey, [[UIDevice currentDevice] uniqueIdentifier], w, h, userAgent, test];
+    
   NSMutableDictionary *userContextDic = [[NSMutableDictionary alloc] initWithCapacity:2];
   if ( [userContextDic count] > 0 ) {
     str = [self appendUserContextDic:userContextDic withUrl:str];
