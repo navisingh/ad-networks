@@ -706,7 +706,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "${MOPUB_SDK}";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../mopub-mopub-client-a1a0664/MoPubiOS/MoPubSDK";
 			};
 			name = Debug;
 		};
@@ -725,7 +725,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "${MOPUB_SDK}";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../mopub-mopub-client-a1a0664/MoPubiOS/MoPubSDK";
 			};
 			name = Release;
 		};

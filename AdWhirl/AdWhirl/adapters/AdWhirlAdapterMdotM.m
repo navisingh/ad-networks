@@ -143,9 +143,10 @@
   NSString *urlString = [str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 
   NSURL *adRequestURL =  [[NSURL alloc] initWithString:urlString];
+//  AWLogSetLogLevel(AWLogLevelDebug);
   AWLogDebug(@"Requesting MdotM ad (%@) %@", str, adRequestURL);
   NSURLRequest *adRequest = [NSURLRequest requestWithURL:adRequestURL];
-       
+
 
   NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:adRequest
                delegate:self];

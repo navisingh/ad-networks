@@ -63,10 +63,15 @@
 	srandom(time(NULL));
 }
 
+#ifdef __IPHONE_4_0
+UIKIT_EXTERN NSString *const UIApplicationDidEnterBackgroundNotification __attribute__((weak_import));
+UIKIT_EXTERN NSString *const UIApplicationWillEnterForegroundNotification __attribute__((weak_import));
+#endif
+
 - (id)initWithAdUnitId:(NSString *)adUnitId size:(CGSize)size 
 {   
 	CGRect f = (CGRect){{0, 0}, size};
-    if (self = [super initWithFrame:f]) 
+    if ((self = [super initWithFrame:f])) 
 	{
 		self.backgroundColor = [UIColor clearColor];
 		self.clipsToBounds = YES;
@@ -80,22 +85,28 @@
 		_animationType = MPAdAnimationTypeNone;
 		_originalSize = size;
 		
-		// register as lister for events for going into and returning from background
+		// register as listener for events for going into and returning from background
 		// for iOS 4.0 +
-		if (&UIApplicationDidEnterBackgroundNotification != nil)
+#ifdef __IPHONE_4_0
+        NSString *const *p = &UIApplicationDidEnterBackgroundNotification;
+        BOOL frameworkSupportsUIApplicationDidEnterBackgroundNotification = p!= NULL;
+        
+		if (frameworkSupportsUIApplicationDidEnterBackgroundNotification)
 		{
 			[[NSNotificationCenter defaultCenter] addObserver:self 
 													 selector:@selector(applicationDidEnterBackground) 
 														 name:UIApplicationDidEnterBackgroundNotification 
 													   object:[UIApplication sharedApplication]];
 		}		
-		if (&UIApplicationWillEnterForegroundNotification != nil)
+		if (frameworkSupportsUIApplicationDidEnterBackgroundNotification)
 		{
 			[[NSNotificationCenter defaultCenter] addObserver:self 
 													 selector:@selector(applicationWillEnterForeground)
 														 name:UIApplicationWillEnterForegroundNotification 
 													   object:[UIApplication sharedApplication]];
 		}
+#endif
+        
     }
     return self;
 }
