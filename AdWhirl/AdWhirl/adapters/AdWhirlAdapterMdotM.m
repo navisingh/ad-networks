@@ -110,10 +110,17 @@
   UIDevice *device = [UIDevice currentDevice];
   NSBundle *bundle = [NSBundle mainBundle];
   NSLocale *locale = [NSLocale currentLocale];
+  NSString *model;
+  NSRange range = [[device model]  rangeOfString:@" Simulator"];
+  if(range.location != NSNotFound)
+    model = [[device model] substringToIndex:range.location];
+  else
+    model = [device model];
+  
   NSString *userAgent = [NSString stringWithFormat:@"%@ %@ (%@; %@ %@; %@)",
           [bundle objectForInfoDictionaryKey:@"CFBundleDisplayName"],
           [bundle objectForInfoDictionaryKey:@"CFBundleVersion"],
-          [device model],
+          model,
           [device systemName], [device systemVersion],
           [locale localeIdentifier]];
   int test;
@@ -143,7 +150,7 @@
   NSString *urlString = [str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 
   NSURL *adRequestURL =  [[NSURL alloc] initWithString:urlString];
-//  AWLogSetLogLevel(AWLogLevelDebug);
+  AWLogSetLogLevel(AWLogLevelDebug);
   AWLogDebug(@"Requesting MdotM ad (%@) %@", str, adRequestURL);
   NSURLRequest *adRequest = [NSURLRequest requestWithURL:adRequestURL];
 
@@ -305,6 +312,9 @@
                                description:@"Expected top-level dictionary in MdotM ad data"];
     return NO;
   }
+//===== added by Navi ===========
+    [adWhirlView replaceBannerViewWith:self.adView];
+
   return YES;
 }
 
