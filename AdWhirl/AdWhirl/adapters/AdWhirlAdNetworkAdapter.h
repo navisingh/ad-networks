@@ -124,4 +124,7 @@ typedef enum {
 @property (nonatomic,retain) AdWhirlAdNetworkConfig *networkConfig;
 @property (nonatomic,retain) UIView *adNetworkView;
 
+//Navi - added this property.
+@property (nonatomic, assign) BOOL hidden;
+
 @end

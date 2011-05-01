@@ -33,6 +33,17 @@
 @synthesize networkConfig;
 @synthesize adNetworkView;
 
+//Navi added this property
+@dynamic hidden;
+- (BOOL) hidden
+{
+    return adNetworkView.hidden;
+}
+- (void) setHidden:(BOOL)hide
+{
+    adNetworkView.hidden = hide;  
+}
+
 - (id)initWithAdWhirlDelegate:(id<AdWhirlDelegate>)delegate
                          view:(AdWhirlView *)view
                        config:(AdWhirlConfig *)config

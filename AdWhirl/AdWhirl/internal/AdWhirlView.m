@@ -60,6 +60,14 @@ NSInteger adNetworkPriorityComparer(id a, id b, void *ctx) {
 @synthesize rollOverReachability;
 @synthesize testDarts;
 
+//Navi - overrode this property.
+@synthesize hidden;
+- (void)setHidden:(BOOL)hide
+{
+    self.currAdapter.hidden = hide;
+    super.hidden = hide;
+}
+
 - (void)setDelegate:(id <AdWhirlDelegate>)theDelegate {
   [self willChangeValueForKey:@"delegate"];
   delegate = theDelegate;
@@ -455,6 +463,7 @@ static BOOL randSeeded = NO;
   }
   [self makeAdRequest:NO];
 }
+
 
 - (BOOL)adExists {
   UIView *currAdView = [self viewWithTag:kAdWhirlViewAdSubViewTag];

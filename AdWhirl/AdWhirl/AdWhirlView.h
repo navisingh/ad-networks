@@ -48,39 +48,40 @@
 
 
 @interface AdWhirlView : UIView <AdWhirlConfigDelegate,
-                                 AWNetworkReachabilityDelegate> {
-  id<AdWhirlDelegate> delegate;
-  AdWhirlConfig *config;
-
-  NSMutableArray *prioritizedAdNetCfgs;
-  double totalPercent;
-
-  BOOL ignoreAutoRefreshTimer;
-  BOOL ignoreNewAdRequests;
-  BOOL appInactive;
-  BOOL showingModalView;
-
-  BOOL requesting;
-  AdWhirlAdNetworkAdapter *currAdapter;
-  AdWhirlAdNetworkAdapter *lastAdapter;
-  NSDate *lastRequestTime;
-  NSMutableDictionary *pendingAdapters;
-
-  NSTimer *refreshTimer;
-
-  // remember which adapter we last sent click stats for so we don't send twice
-  id lastNotifyAdapter;
-
-  NSError *lastError;
-
-  AdWhirlConfigStore *configStore;
-
-  AWNetworkReachabilityWrapper *rollOverReachability;
-
-  NSUInteger configFetchAttempts;
-
-  NSArray *testDarts;
-  NSUInteger testDartIndex;
+                                 AWNetworkReachabilityDelegate> 
+{
+    id<AdWhirlDelegate> delegate;
+    AdWhirlConfig *config;
+    
+    NSMutableArray *prioritizedAdNetCfgs;
+    double totalPercent;
+    
+    BOOL ignoreAutoRefreshTimer;
+    BOOL ignoreNewAdRequests;
+    BOOL appInactive;
+    BOOL showingModalView;
+    
+    BOOL requesting;
+    AdWhirlAdNetworkAdapter *currAdapter;
+    AdWhirlAdNetworkAdapter *lastAdapter;
+    NSDate *lastRequestTime;
+    NSMutableDictionary *pendingAdapters;
+    
+    NSTimer *refreshTimer;
+    
+    // remember which adapter we last sent click stats for so we don't send twice
+    id lastNotifyAdapter;
+    
+    NSError *lastError;
+    
+    AdWhirlConfigStore *configStore;
+    
+    AWNetworkReachabilityWrapper *rollOverReachability;
+    
+    NSUInteger configFetchAttempts;
+    
+    NSArray *testDarts;
+    NSUInteger testDartIndex;
 }
 
 /**
@@ -208,6 +209,9 @@
  * adWhirlDidFailToReceiveAd message.
  */
 @property (nonatomic, readonly) NSError *lastError;
+
+//Navi - overrode this property.
+@property(nonatomic,getter=isHidden) BOOL hidden; 
 
 
 #pragma mark For ad network adapters use only

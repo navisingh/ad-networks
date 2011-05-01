@@ -39,6 +39,11 @@
 
 - (void)getAd {
   ADBannerView *iAdView = [[ADBannerView alloc] initWithFrame:CGRectZero];
+//    UIApplication *app = [UIApplication sharedApplication];    
+//    if ([app.delegate respondsToSelector:@selector(iAdView)]) {
+//        [app.delegate setIAdView:iAdView];
+//    }
+    
   kADBannerContentSizeIdentifierPortrait =
     &ADBannerContentSizeIdentifierPortrait != nil ?
       ADBannerContentSizeIdentifierPortrait :
