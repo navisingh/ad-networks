@@ -24,6 +24,9 @@ typedef enum {
   // There was an error loading data from the network.
   kGADErrorNetworkError,
 
+  // The ad server experienced a failure processing the request.
+  kGADErrorServerError,
+
   // The current device's OS is below the minimum required version.
   kGADErrorOSVersionTooLow,
 

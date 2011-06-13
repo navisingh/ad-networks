@@ -8,6 +8,9 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <Foundation/Foundation.h>
 
+// Constant for getting test ads on the simulator using the testDevices method.
+#define GAD_SIMULATOR_ID @"Simulator"
+
 // Genders to help deliver more relevant ads.
 typedef enum {
   kGADGenderUnknown,
@@ -21,16 +24,6 @@ typedef enum {
 // Creates an autoreleased GADRequest.
 + (GADRequest *)request;
 
-// To verify your integration set this to YES, make an ad request on the
-// simulator, and click on the test ad.  A browser should slide up covering the
-// whole screen.  The integration guide has a screenshot and troubleshooting
-// tips.
-//
-// This property has no effect on devices.  That protects against accidentally
-// submitting to the App Store with this set to YES and having your users see
-// the test ad.
-@property (nonatomic, getter=isTesting) BOOL testing;
-
 // Reserved for future use.
 @property (nonatomic, retain) NSDictionary *additionalParameters;
 
@@ -38,6 +31,22 @@ typedef enum {
 
 // Returns the version of the SDK.
 + (NSString *)sdkVersion;
+
+#pragma mark Testing
+
+// Test ads are returned to these devices.  Device identifiers are the same used
+// to register as a development device with Apple.  To obtain a value open the
+// Organizer (Window -> Organizer from Xcode), control-click or right-click on
+// the device's name, and choose "Copy Device Identifier".  Alternatively you
+// can obtain it through code using [[UIDevice currentDevice] uniqueIdentifier].
+//
+// For example:
+//   request.testDevices = [NSArray arrayWithObjects:
+//       GAD_SIMULATOR_ID,                               // Simulator
+//       //@"28ab37c3902621dd572509110745071f0101b124",  // Test iPhone 3G 3.0.1
+//       @"8cf09e81ef3ec5418c3450f7954e0e95db8ab200",    // Test iPod 4.3.1
+//       nil];
+@property (nonatomic, retain) NSArray *testDevices;
 
 #pragma mark User Information
 
@@ -70,5 +79,11 @@ typedef enum {
 // Convenience method for adding keywords one at a time such as @"Sports Scores"
 // and then @"Football".
 - (void)addKeyword:(NSString *)keyword;
+
+#pragma mark -
+#pragma mark Deprecated Methods
+
+// Please use testDevices instead.
+@property (nonatomic, getter=isTesting) BOOL testing;
 
 @end
