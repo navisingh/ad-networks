@@ -1,21 +1,23 @@
-# xcode
-*/build/*
+# user data
 *.pbxuser
 !default.pbxuser
+xcuserdata
+*.xcuserdatad/
+
 *.mode1
 *.mode1v3
 !default.mode1v3
 *.mode2v3
 !default.mode2v3
+
 *.perspective
 *.perspectivev3
 !default.perspectivev3
-*.xcuserdata/
+
 profile
 *.moved-aside
-
-# old skool
+build/*
 .svn
-
-# osx noise
 .DS_Store
+Thumbs.db
+Desktop.ini
